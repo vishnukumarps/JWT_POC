@@ -42,8 +42,8 @@ namespace JWT_Learning
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
 
-                    ValidIssuer = "",
-                    ValidAudience = "",
+                    ValidIssuer = "https://localhost:44334",
+                    ValidAudience = "https://localhost:44334",
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SuperSecretKey@345"))
 
                 };
