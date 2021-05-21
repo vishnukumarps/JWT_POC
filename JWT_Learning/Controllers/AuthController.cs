@@ -38,7 +38,6 @@ namespace JWT_Learning.Controllers
                     );
                 var tockenString = new JwtSecurityTokenHandler().WriteToken(tokenOption);
                 return Ok(new { Token = tockenString });
-
             }
             return Unauthorized();
         }
