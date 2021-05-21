@@ -70,6 +70,7 @@ namespace JWT_Learning
         {
             if (env.IsDevelopment())
             {
+                app.UseHttpsRedirection();
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "JWT_Learning v1"));
@@ -84,7 +85,7 @@ namespace JWT_Learning
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-            });
+            }) ;
         }
     }
 }
